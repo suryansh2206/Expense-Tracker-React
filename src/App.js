@@ -1,7 +1,7 @@
 import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -41,3 +41,6 @@ function App() {
 }
 
 export default App;
+
+
+
