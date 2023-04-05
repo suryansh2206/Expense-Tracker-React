@@ -33,10 +33,14 @@ const App = () => {
       locationOfExpenditure: "Furniture Store",
     },
   ];
+  const addExpenseHandler = (expense) => {
+    console.log(expense)
+  }
+
   return (
     <div>
       <h1>Expense Tracker</h1>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
